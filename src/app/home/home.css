@@ -1,0 +1,32 @@
+.welcome-loop {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  min-width: 12rem;
+  animation: welcomeFade 2.8s ease-in-out infinite;
+}
+
+@keyframes welcomeFade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  55% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

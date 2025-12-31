@@ -1,0 +1,9 @@
+@media (min-width: 0) {
+	.logo-signature {
+		height: 3.25rem;
+		width: auto;
+		object-fit: contain;
+		filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4))
+			drop-shadow(0 0 2px rgba(255, 255, 255, 0.85));
+	}
+}

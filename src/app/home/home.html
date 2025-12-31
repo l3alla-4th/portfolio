@@ -1,0 +1,29 @@
+<section id="home" class="relative min-h-screen bg-[#120a1f] overflow-hidden">
+  <!-- stars -->
+  <div class="absolute inset-0 bg-[radial-gradient(#ffffff22_1px,transparent_1px)] [background-size:40px_40px]"></div>
+
+  <!-- hero content -->
+  <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center px-10 lg:px-24 pt-20">
+    <!-- text -->
+    <div class="text-white space-y-6">
+      <h1 class="text-4xl lg:text-5xl font-mono flex items-center gap-3">
+        <span class="welcome-loop" (animationiteration)="cycleWelcome()">
+          {{ currentWelcome }}
+        </span>
+      </h1>
+
+      <h2 class="text-4xl lg:text-5xl font-bold">
+        I'M <span class="text-purple-400">ALLALOU Salah-Eddine</span>
+      </h2>
+
+      <p class="text-2xl text-purple-400 font-mono">
+        <span class="animate-pulse">Your best solution is with me</span>
+      </p>
+    </div>
+
+    <!-- illustration -->
+    <div class="flex justify-center lg:justify-end mt-12 lg:mt-0">
+      <img src="assets/hero-dev.svg" alt="developer illustration" class="w-[420px] max-w-full" />
+    </div>
+  </div>
+</section>

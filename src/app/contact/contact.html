@@ -1,0 +1,109 @@
+<section id="contact" class="min-h-screen bg-[#120a1f] py-20 px-6 relative overflow-hidden">
+  <!-- stars -->
+  <div class="absolute inset-0 bg-[radial-gradient(#ffffff22_1px,transparent_1px)] [background-size:40px_40px]"></div>
+
+  <div class="max-w-4xl mx-auto relative z-10">
+    <h2 class="text-4xl font-bold text-center text-white mb-16 font-mono">
+      <span class="border-b-2 border-purple-500 pb-2">Get In Touch</span>
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+            <i class="pi pi-envelope text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-mono text-purple-400">Email</h3>
+            <p class="text-white">salahdineabdou@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+            <i class="pi pi-phone text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-mono text-purple-400">Phone</h3>
+            <p class="text-white">+212 6 93 68 23 27</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+            <i class="pi pi-map-marker text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-mono text-purple-400">Location</h3>
+            <p class="text-white">Mohammedia, Morocco</p>
+          </div>
+        </div>
+
+        <div class="pt-8">
+          <h3 class="text-xl font-mono text-purple-400 mb-4">Follow Me</h3>
+          <div class="flex gap-4">
+            <a
+              *ngFor="let link of socialLinks"
+              [href]="link.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
+              [attr.aria-label]="link.label"
+            >
+              <i [class]="link.icon + ' text-white'"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-[#1a122e] rounded-lg p-8 border border-purple-500/20">
+        <form class="space-y-6">
+          <div>
+            <label class="block text-purple-400 font-mono mb-2">Name</label>
+            <input 
+              type="text" 
+              class="w-full bg-[#2d2447] border border-purple-500/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500"
+              placeholder="Your Name"
+            >
+          </div>
+
+          <div>
+            <label class="block text-purple-400 font-mono mb-2">Email</label>
+            <input 
+              type="email" 
+              class="w-full bg-[#2d2447] border border-purple-500/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500"
+              placeholder="your.email@example.com"
+            >
+          </div>
+
+          <div>
+            <label class="block text-purple-400 font-mono mb-2">Subject</label>
+            <input 
+              type="text" 
+              class="w-full bg-[#2d2447] border border-purple-500/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500"
+              placeholder="Subject"
+            >
+          </div>
+
+          <div>
+            <label class="block text-purple-400 font-mono mb-2">Message</label>
+            <textarea 
+              rows="5"
+              class="w-full bg-[#2d2447] border border-purple-500/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 resize-none"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <button 
+            type="submit"
+            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-mono py-3 rounded-lg transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
